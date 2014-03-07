@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/scanning_start" android:title="Scan" android:orderInCategory="3" android:showAsAction="always|withText"></item>
+    <item android:id="@+id/scanning_stop" android:title="Stop" android:orderInCategory="4" android:showAsAction="always|withText"></item>
+    <item android:id="@+id/scanning_indicator" android:orderInCategory="2" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/show_hr_demo_item" android:title="HR Demo" android:showAsAction="always|withText" android:orderInCategory="6"></item>
+
+</menu>

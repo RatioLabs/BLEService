@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/device_connect" android:title="Connect" android:showAsAction="always"></item>
+    <item android:id="@+id/device_disconnect" android:title="Disconnect" android:visible="false" android:showAsAction="always"></item>
+
+</menu>

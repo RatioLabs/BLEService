@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ratio.BTDeviceService"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+   <service
+        android:name="com.ratio.deviceService.BTDeviceService"
+        android:enabled="true" />
+    <!-- receiver to re-enable the bluetooth adapter after it's been disabled for the BTLE workaround -->
+    <receiver android:name="com.ratio.deviceService.BluetoothBroadcastReceiver" >
+        <intent-filter>
+            <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            <action android:name="com.ratio.deviceService.DeviceService.RESET_ADAPTER" />
+        </intent-filter>
+    </receiver>
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+	<uses-library android:name="com.broadcom.bt" android:required="true" />
+</manifest>
