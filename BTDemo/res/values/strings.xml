@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BTDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scan_devices">Scan Devices</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="no_name">No Name</string>
+</resources>
